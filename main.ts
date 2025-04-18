@@ -1,7 +1,7 @@
 let temperatura = 0
 let luz = 0
 let sonido = 0
-basic.forever(function () {
+input.onButtonPressed(Button.A, function () {
     // Leer temperatura en grados Celsius
     temperatura = input.temperature()
     // Leer nivel de luz
