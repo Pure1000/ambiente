@@ -1,16 +1,18 @@
+let temperatura = 0
+let luz = 0
+let sonido = 0
 basic.forever(function () {
     // Leer temperatura en grados Celsius
-    let temperatura = input.temperature()
+    temperatura = input.temperature()
     // Leer nivel de luz
-    let luz = input.lightLevel()
+    luz = input.lightLevel()
     // Leer nivel de sonido (usando el sensor de sonido del micro:bit)
-    let sonido = input.soundLevel()
-
+    sonido = input.soundLevel()
     // Mostrar los datos en la pantalla
-    basic.showString("T:" + temperatura)
+    basic.showString("Temperatura:" + temperatura)
     basic.pause(1000)
-    basic.showString("L:" + luz)
+    basic.showString("Luz:" + luz)
     basic.pause(1000)
-    basic.showString("S:" + sonido)
+    basic.showString("Sonido:" + sonido)
     basic.pause(1000)
 })
